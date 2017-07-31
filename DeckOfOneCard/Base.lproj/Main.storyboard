@@ -6,6 +6,46 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="NPC-We-efm">
+            <objects>
+                <viewController id="zoF-WX-0mN" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ont-69-3mK"/>
+                        <viewControllerLayoutGuide type="bottom" id="L5S-bO-u7h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rHg-Vr-u7S">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nf0-82-kqn">
+                                <rect key="frame" x="133.5" y="28" width="107" height="30"/>
+                                <state key="normal" title="Draw New Card"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NWF-tX-wE6">
+                                <rect key="frame" x="37" y="66" width="300" height="450"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="NWF-tX-wE6" secondAttribute="height" multiplier="2:3" id="ch2-23-9dY"/>
+                                    <constraint firstAttribute="width" constant="300" id="yOH-Xf-DTy"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Nf0-82-kqn" firstAttribute="centerX" secondItem="rHg-Vr-u7S" secondAttribute="centerX" id="1R5-ES-ln5"/>
+                            <constraint firstItem="Nf0-82-kqn" firstAttribute="top" secondItem="Ont-69-3mK" secondAttribute="bottom" constant="8" id="7Ww-ue-4qe"/>
+                            <constraint firstItem="NWF-tX-wE6" firstAttribute="centerX" secondItem="rHg-Vr-u7S" secondAttribute="centerX" id="Agc-qU-1pq"/>
+                            <constraint firstItem="NWF-tX-wE6" firstAttribute="top" secondItem="Nf0-82-kqn" secondAttribute="bottom" constant="8" id="abc-g8-UHw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cbl-k8-Xa8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="173" y="136"/>
+        </scene>
+    </scenes>
 </document>

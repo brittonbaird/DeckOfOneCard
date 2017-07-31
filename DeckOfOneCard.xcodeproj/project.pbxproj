@@ -12,6 +12,7 @@
 		28A047C41F2F97090016BF13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28A047C31F2F97090016BF13 /* Assets.xcassets */; };
 		28A047C71F2F97090016BF13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28A047C51F2F97090016BF13 /* LaunchScreen.storyboard */; };
 		28A047D11F2F9EBC0016BF13 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A047D01F2F9EBC0016BF13 /* Card.swift */; };
+		28A047D51F2FA4100016BF13 /* CardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A047D41F2FA4100016BF13 /* CardController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		28A047C61F2F97090016BF13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28A047C81F2F97090016BF13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28A047D01F2F9EBC0016BF13 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		28A047D41F2FA4100016BF13 /* CardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				28A047BC1F2F97090016BF13 /* AppDelegate.swift */,
 				28A047D21F2F9EF00016BF13 /* Data */,
+				28A047D31F2FA3F20016BF13 /* ModelController */,
 				28A047CF1F2F977A0016BF13 /* UI */,
 				28A047CE1F2F97680016BF13 /* Resources */,
 			);
@@ -86,6 +89,14 @@
 				28A047D01F2F9EBC0016BF13 /* Card.swift */,
 			);
 			name = Data;
+			sourceTree = "<group>";
+		};
+		28A047D31F2FA3F20016BF13 /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				28A047D41F2FA4100016BF13 /* CardController.swift */,
+			);
+			name = ModelController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28A047BD1F2F97090016BF13 /* AppDelegate.swift in Sources */,
+				28A047D51F2FA4100016BF13 /* CardController.swift in Sources */,
 				28A047D11F2F9EBC0016BF13 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

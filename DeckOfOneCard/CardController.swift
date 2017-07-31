@@ -6,7 +6,7 @@
 //  Copyright © 2017 Britton Baird. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class CardController {
 
@@ -79,6 +79,36 @@ class CardController {
         }
         
         dataTask.resume()
+    }
+    
+    static func image(forURL url: String, completion: @escaping (UIImage?) -> Void) {
+        // We need to create a URL from the string that is passed.
+        // The string being passed in should be the card.imageEndPoint
+        guard let url = URL(string: url) else { fatalError("Image URL option is nil") }
+        
+        // Create our dataTask that takes a URL. We can use a URL instead of a URL request because the URL is responding with an image and is a specific URL.
+        let dataTask = URLSession.shared.dataTask(with: url) { (data, _, _) in
+            // We have access to the data from the completionHandler that belongs to dataTask
+            // Check to make sure we are really getting data back
+            guard let data = data,
+                // If we have the data, create an image from that data
+                let image = UIImage(data: data) else {
+                    // if we cannot create an image from the data, call the completion (belonging to our image method) with nil
+                    completion(nil)
+                    return
+            }
+            
+            // If we successfully created an image
+            // Then dispatch back to the main queue
+            // and call the completion (that belongs to our image method) with the image we created above.
+            DispatchQueue.main.async {
+                completion(image)
+            }
+        }
+        
+        // Don't forget to resume the dataTask otherwise none of the above will run
+        dataTask.resume()
+        
     }
     
     

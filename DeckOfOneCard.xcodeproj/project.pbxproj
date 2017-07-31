@@ -13,6 +13,7 @@
 		28A047C71F2F97090016BF13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28A047C51F2F97090016BF13 /* LaunchScreen.storyboard */; };
 		28A047D11F2F9EBC0016BF13 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A047D01F2F9EBC0016BF13 /* Card.swift */; };
 		28A047D51F2FA4100016BF13 /* CardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A047D41F2FA4100016BF13 /* CardController.swift */; };
+		28A047D71F2FC6960016BF13 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A047D61F2FC6960016BF13 /* CardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		28A047C81F2F97090016BF13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28A047D01F2F9EBC0016BF13 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		28A047D41F2FA4100016BF13 /* CardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardController.swift; sourceTree = "<group>"; };
+		28A047D61F2FC6960016BF13 /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				28A047C01F2F97090016BF13 /* Main.storyboard */,
+				28A047D61F2FC6960016BF13 /* CardViewController.swift */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28A047D71F2FC6960016BF13 /* CardViewController.swift in Sources */,
 				28A047BD1F2F97090016BF13 /* AppDelegate.swift in Sources */,
 				28A047D51F2FA4100016BF13 /* CardController.swift in Sources */,
 				28A047D11F2F9EBC0016BF13 /* Card.swift in Sources */,
